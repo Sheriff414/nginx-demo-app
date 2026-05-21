@@ -1,0 +1,19 @@
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: alpine
+
+service:
+  type: ClusterIP
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 10
+  cpuUtilization: 60
+
+ingress:
+  enabled: false
+  host: nginx-demo.local
+
+appSecret: "bXktc3VwZXItc2VjcmV0"   # base64 encoded

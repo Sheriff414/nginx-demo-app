@@ -1,0 +1,15 @@
+apiVersion: v2
+name: my-app
+description: A Helm chart for Nginx Demo App (converted from k8s manifests)
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - nginx
+  - demo
+  - kubernetes
+maintainers:
+  - name: Your Name
+    email: your.email@example.com
+sources:
+  - https://github.com/Sheriff414/my-app
